@@ -44,38 +44,61 @@ console.log( 'Suspect three is:' + suspectThree )
 
 // Episode 4
 
-// var detective = {
-//     name : 'Ace Ventura',
-//     pet : 'monkey'
-//   }
+var detective = {
+    name : 'Ace Ventura',
+    pet : 'monkey'
+  }
 
-// var printName = function(detective) {
-//   return detective.name
-// }
+var printName = function(detective) {
+  return detective.name
+}
 
-// var detectiveInfo = function() {
-//   detective['name'] = 'Poirot'
-//   return printName(detective);
-// }
+var detectiveInfo = function() {
+  detective['name'] = 'Poirot'
+  return printName(detective);
+}
 
-// console.log(detectiveInfo());
+console.log(detectiveInfo());
+
+//when a variable of the same name is defined inside a function, even an object, it *should* give out that version. 
+//so the 'name' in detective is replaced with Poirot only for detectiveInfo.
+//'Poirot'.
+
 
 // Episode 5
 
-// var murderer = 'rick';
+var murderer = 'rick';
 
-// var outerFunction = function(){
-//   var murderer = 'marc';
+var outerFunction = function(){
+  var murderer = 'marc';
 
-//   var innerFunction = function(){
-//     murderer = 'valerie';
-//   }
+  var innerFunction = function(){
+    murderer = 'valerie';
+  }
 
-//   innerFunction();
-// }
+  innerFunction();
+}
 
-// outerFunction();
-// console.log('the murderer is ', murderer);
+outerFunction();
+console.log('the murderer is ', murderer);
+
+//when you run outerfunction, innerfunction changes murderer to 'valerie'. no 'var' is here, so it is globally defined. Valerie should be displayed - unless it was Marc or Rick who swiped the 'var'.
+
+//I was wrong! The murderer is Rick.
+
+//The global assignment outside of outerFunction seems to override the global-scope change in innerFunction. 
+
+//This is because it has been defined within the function already. The first thing to overwrite is the defined 'murderer' variable.
+
 // Episode 6 - Make up your own episode/s!
 
 // Make up your own episode which can be whatever you wish and the rest of the class will work out together what happened and what the output will be.
+
+var sceneOfTheCrime = "Billiards room"
+
+function sceneDoubter (){
+  sceneOfTheCrime = "Library"
+  console.log("The body was found in the kitchen.")
+}
+
+sceneDoubter();
