@@ -27,18 +27,21 @@ console.log(result());
 
 // Episode 3
 
-// var suspectOne = 'Jay';
-// var suspectTwo = 'Val';
-// var suspectThree = 'Keith';
-// var suspectFour = 'Rick';
+var suspectOne = 'Jay';
+var suspectTwo = 'Val';
+var suspectThree = 'Keith';
+var suspectFour = 'Rick';
 
-// var allSuspects = function() {
-//   var suspectThree = 'Harvey'
-//   console.log('Suspects include: ' + suspectOne + ', ' + suspectTwo + ', ' + suspectThree + ', ' + suspectFour)
-// }
+var allSuspects = function() {
+  var suspectThree = 'Harvey'
+  console.log('Suspects include: ' + suspectOne + ', ' + suspectTwo + ', ' + suspectThree + ', ' + suspectFour)
+}
 
-// allSuspects();
-// console.log( 'Suspect three is:' + suspectThree )
+allSuspects();
+console.log( 'Suspect three is:' + suspectThree )
+
+//the output from allSuspects has Harvey has suspect 3 - the last console log will show suspect three as Keith.
+
 // Episode 4
 
 // var detective = {
