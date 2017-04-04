@@ -103,3 +103,4 @@ function sceneDisplay (){
 }
 
 sceneDisplay();
+console.log(sceneOfTheCrime)
