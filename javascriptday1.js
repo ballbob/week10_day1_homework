@@ -63,7 +63,8 @@ console.log(detectiveInfo());
 //when a variable of the same name is defined inside a function, even an object, it *should* give out that version. 
 //so the 'name' in detective is replaced with Poirot only for detectiveInfo.
 //'Poirot'.
-
+//wrong!!
+//the 'name' key is being changed when detectiveInfo is called!
 
 // Episode 5
 
