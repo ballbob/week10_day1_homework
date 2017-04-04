@@ -93,13 +93,13 @@ console.log('the murderer is ', murderer);
 
 // Episode 6 - Make up your own episode/s!
 
-// Make up your own episode which can be whatever you wish and the rest of the class will work out together what happened and what the output will be.
+//What will this display?
 
 var sceneOfTheCrime = "Billiards room"
 
-function sceneDoubter (){
+function sceneDisplay (){
   sceneOfTheCrime = "Library"
-  console.log("The body was found in the kitchen.")
+  console.log("Kitchen")
 }
 
-sceneDoubter();
+sceneDisplay();
